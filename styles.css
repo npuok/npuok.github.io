@@ -1,0 +1,97 @@
+header {
+    color: white;
+    background-color: rgba(168, 52, 52, 0.863);
+    padding: 10px;
+    text-align: center;
+    font-family: serif, Arial, sans-serif;
+}
+
+body {
+    font-family: serif, Arial, sans-serif;
+}
+
+nav ul li{
+    position: relative;
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    opacity: 0.6;
+    transition: opacity .1s ease;
+}
+
+nav ul li a:hover{
+    opacity: 1;
+}
+
+section {
+    padding: 10px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+aside {
+    padding: 10px;
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#cityInfo {
+    padding: 1px;
+    border: 2px solid;
+    border-color: black;
+    color: white;
+    background-color: rgba(168, 52, 52, 0.863);
+
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+#contactForm {
+    padding-left: 5px;
+    padding-top: 5px;
+    border: 2px solid;
+    border-color: black;
+    color: white;
+    background-color: rgba(168, 52, 52, 0.863);
+
+    width: 100%;
+    height: auto; 
+    table-layout: auto;
+    border-radius: 25px;
+}
+
+caption {
+    color: rgba(168, 52, 52, 0.863);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    background-color: white;
+    color: rgba(168, 52, 52, 0.863);
+    border-radius: 25px;    
+    cursor: pointer;
+}
+
+#firstName, #lastName, #emailAddress, #emailAddress2, #questions {
+    width: 90%;
+    border-radius: 25px;  
+}
+
+p.center{
+    text-align: center;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Grand Island</title>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <h1>Grand Island, NE</h1>
+            <nav>
+                <ul>
+                    <li><a href="nebraska.html">Home</a></li>
+                    <li><a href="lincoln.html">Lincoln</a></li>
+                    <li><a href="omaha.html">Omaha</a></li>
+                    <li><a href="grandIsland.html">Grand Island</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h3>About Grand Island</h3>
+            <p>Grand Island is the fourth most populous city in the state of Nebraska. It is located in Hall county. </p>
+
+            <table id="cityInfo">
+                <caption><b>General Information</b></caption>
+                <tr>
+                    <th>Population:</th>
+                    <td>52,622</td>
+                </tr>
+                <tr>
+                    <th>Year Incorporated:</th>
+                    <td>1872</td>                        
+                </tr>
+                <tr>
+                    <th>Region:</th>
+                    <td>Southeastern</td>                        
+                </tr>
+                <tr>
+                    <th>Classification:</th>
+                    <td>Urban</td>                        
+                </tr>
+                <tr>
+                    <th>Average Income:</th>
+                    <td>$59,061 (Below Average)</td>
+                </tr>
+            </table>
+
+            <p class="center">For more information click <a href="https://www.census.gov/quickfacts/fact/table/grandislandcitynebraska/SBO001217">here</a>.</p>
+            <cite>United States Census Bureau. (n.d.). U.S. Census Bureau quickfacts: Grand Island City, Nebraska. https://www.census.gov/quickfacts/fact/table/grandislandcitynebraska/SBO001217</cite>
+            <br>
+            <br>
+            <br>
+            <img src="grandIslandImage.jpg" alt="Photo of wheat field, photo by: Polina Rytova (found on Unsplash+)">
+            <cite>Rytova, P. (2018). Wheat Field [Digital Image]. Unsplash. https://unsplash.com/photos/wheat-field-1dGMs4hhcVA.</cite>
+
+        </section>
+
+        <aside>
+            <h3>Nebraska State Fair</h3>
+            <p>Grand Island is home to the Nebraska state fair. Nebraska's state fair was originally located in <a href="lincoln.html">Lincoln</a>. People from all over Nebraska come every to the state fair. The state fair happens once a year in the fall.</p>
+
+            <h4>Activites</h4>
+            <ul>
+                <li>Jumping Pillow</li>
+                <li>Pig Races</li>
+                <li>Goat Shows</li>
+                <li>Carnival Rides</li>
+                <li>Outdoor Concerts</li>
+            </ul>
+
+            <p>For more information, check out the official Nebraska State Fair website, <a href="https://www.statefair.org/">here</a>.</p>
+            <cite>Nebraska State Fair. (2024, November 1). https://www.statefair.org/</cite>
+            <br>
+            <br>
+            <h4>Become a vendor today!</h4>
+            <p>Please fill out the form if you would like to be a vendor at the state fair next year.</p>
+
+            <form id="contactForm">
+                <label for="firstName">First Name:</label> 
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+                <br>
+                <label for="lastName">Last Name:</label> 
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+                <br>
+                <label for="emailAddress">Email Address:</label> 
+                <input type="email" id="emailAddress" name="emailAddress" placeholder="Enter your email address">
+                <br>            
+                <label for="emailAddress2">Email Address Verification:</label> 
+                <input type="email" id="emailAddress2" name="emailAddress2" placeholder="Verify your email address">
+                <br>
+                <label for="questions">Questions:</label> 
+                <input type="text" id="questions" name="questions" placeholder="Enter any questions"> 
+                <br>
+                <br>
+                <button type="submit">Submit</button>
+                <br>
+                <br>
+            </form>
+
+
+            <script>
+                function emailAddressVerification() {
+                    var email1 = document.getElementById('emailAddress').value;
+                    var email2 = document.getElementById('emailAddress2').value;
+                    if (email1 !== email2) {
+                        alert("Your email address was not successfully verified. Please try again.");
+                        return false;
+                    } else {
+                        return true;
+                    }                   
+                }
+            </script>
+            <br>            
+        </aside>
+    </body>
+</html>
+
+
