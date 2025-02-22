@@ -79,7 +79,7 @@
             <h4>Become a vendor today!</h4>
             <p>Please fill out the form if you would like to be a vendor at the state fair next year.</p>
 
-            <form id="contactForm">
+            <form id="contactForm" onsubmit="return emailAddressVerification()">
                 <label for="firstName">First Name:</label> 
                 <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
                 <br>
@@ -100,7 +100,6 @@
                 <br>
                 <br>
             </form>
-
 
             <script>
                 function emailAddressVerification() {
